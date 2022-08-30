@@ -1,0 +1,47 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    align-items: center;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: space-evenly;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+/*--------------
+ Bannaer Design
+ ---------------- */
+
+.bannar-detail {
+    margin-left: 103px;
+}
+
+.bannar-detail h1 {
+    font-size: 50px;
+}
+
+.bannar-img {
+    margin-right: 80px;
+}
+
+.bannar-img img {
+    height: 613px;
+    width: 581px;
+}
