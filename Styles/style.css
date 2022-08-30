@@ -1,6 +1,3 @@
-/* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -49,6 +46,15 @@ body {
     width: 581px;
 }
 
+.bannar-btn {
+    background-color: red;
+    padding: 16px 25px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 30px;
+    color: white;
+}
+
 /* ------------------------
    Sidbar and main content
 -------------------------- */
@@ -63,6 +69,7 @@ body {
     background-color: black;
     padding: 30px;
     border-radius: 8px;
+    margin-right: 24px;
 }
 
 .btn {
@@ -87,10 +94,64 @@ body {
 .blog-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid red;
+
     gap: 20px;
 }
 
-.blog-card {
-    border: 1px solid red;
+.blog-img img {
+    width: 312px;
+    height: 175px;
+}
+
+.btn-transfer {
+    padding: 4px 20px;
+    background-color: white;
+    border-color: #161616;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500px;
+    margin-top: 20px;
+}
+
+.blog-content {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.blog-footer {
+    display: flex;
+}
+
+.timezone {
+    margin-right: 10px;
+}
+
+.comment-box {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+/* -------------
+    footer
+------------- */
+
+.footer {
+    background-color: #161616;
+    height: 240px;
+    color: white;
+}
+
+.footer h2 {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 40px;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 50px;
+    padding-right: 250px;
+    padding-left: 250px;
 }
