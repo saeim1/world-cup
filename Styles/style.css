@@ -1,33 +1,36 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html,
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.container {
-    display: flex;
+/* ------------------
+     Bannar Design
+---------------------- */
+.bannar-container {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 1rem;
     background-color: black;
     border-radius: 20px;
     color: white;
-    position: absolute;
-    align-items: center;
     align-items: center;
     margin-top: 25px;
-    justify-content: space-evenly;
-    margin-left: 140px;
-    margin-right: 140px;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-
-/*--------------
- Bannaer Design
- ---------------- */
 
 .bannar-detail {
     margin-left: 103px;
@@ -44,4 +47,50 @@ main {
 .bannar-img img {
     height: 613px;
     width: 581px;
+}
+
+/* ------------------------
+   Sidbar and main content
+-------------------------- */
+.main-container {
+    margin: 150px 100px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 15px;
+}
+
+.sidebar {
+    background-color: black;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 17px 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid red;
+    gap: 20px;
+}
+
+.blog-card {
+    border: 1px solid red;
 }
